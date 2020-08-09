@@ -22,7 +22,8 @@
     "eslint-plugin-import": "^2.22.0"
   },
   "dependencies": {
+    "minecraft-data": "^2.63.0",
     "mineflayer": "^2.27.0",
-    "minecraft-data": "^2.63.0"
+    "mineflayer-web-inventory": "^1.1.2"
   }
 }

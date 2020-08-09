@@ -4,7 +4,7 @@ const tpsPlugin = require('..')(mineflayer);
 const bot = mineflayer.createBot({
   host: 'localhost',
   port: 25565,
-  username: 'bot',
+  username: 'autototem',
 });
 
 bot.loadPlugin(tpsPlugin);
