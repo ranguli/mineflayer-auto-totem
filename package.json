@@ -1,0 +1,22 @@
+{
+  "name": "mineflayer-auto-totem",
+  "version": "0.1.0",
+  "description": "A mineflayer plugin to automatically equip totems",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranguli/mineflayer-auto-totem.git"
+  },
+  "keywords": [
+    "mineflayer"
+  ],
+  "author": "ranguli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranguli/mineflayer-auto-armor/issues"
+  },
+  "homepage": "https://github.com/ranguli/mineflayer-auto-armor#readme",
+  "devDependencies": {
+    "mineflayer": "^2.27.0"
+  }
+}
