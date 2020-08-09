@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/ranguli/mineflayer-auto-armor#readme",
   "devDependencies": {
-    "mineflayer": "^2.27.0"
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "dependencies": {
+    "mineflayer": "^2.27.0",
+    "minecraft-data": "^2.63.0"
   }
 }

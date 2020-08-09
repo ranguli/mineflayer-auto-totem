@@ -1,32 +1,30 @@
-module.exports = init
-
-function init () {
-  return inject
+function init() {
+  return inject;
 }
 
+function inject(bot) {
+  const mcData = require('minecraft-data')(bot.version);
+  const totemId = mcData.itemsByName.totem_of_undying.id;
 
-function inject (bot) {
-  const mcData = require('minecraft-data')(bot.version)
+  let enabled = false;
 
-  var enabled = false
+  bot.enableAutoTotem = () => {
+    enabled = true;
+  };
 
-  bot.enableAutoTotem = function () {
-      enabled = true
-  }
-
-  bot.disableAutoTotem= function () {
-      enabled = false
-  }
+  bot.disableAutoTotem = () => {
+    enabled = false;
+  };
 
   bot.inventory.on('windowUpdate', () => {
-      setTimeout(() => {
-        if (enabled && bot.heldItem && bot.heldItem.type == totemId) {
-          bot.unequip('hand', (err) => {
-            console.error(err)
-          })
-        }
-      }, 0) // We must wait until after windowUpdate for bot.heldItem to change
-  })
-
-
+    setTimeout(() => {
+      if (enabled && bot.heldItem && bot.heldItem.type === totemId) {
+        bot.unequip('hand', (err) => {
+          console.error(err);
+        });
+      }
+    }, 0); // We must wait until after windowUpdate for bot.heldItem to change
+  });
 }
+
+module.exports = init;
