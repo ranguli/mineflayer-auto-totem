@@ -1,5 +1,5 @@
 const mineflayer = require('mineflayer');
-const tpsPlugin = require('..')(mineflayer);
+const autoArmor = require('..')(mineflayer);
 
 const bot = mineflayer.createBot({
   host: 'localhost',
@@ -7,7 +7,7 @@ const bot = mineflayer.createBot({
   username: 'autototem',
 });
 
-bot.loadPlugin(tpsPlugin);
+bot.loadPlugin(autoArmor);
 
 bot.on('login', () => {
   bot.enableAutoTotem();
