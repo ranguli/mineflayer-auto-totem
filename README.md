@@ -9,11 +9,11 @@ minecraft clients, but now for your mineflayer bot!
 ```javascript
 
 const mineflayer = require('mineflayer');
-const autoArmor = require('mineflayer-auto-armor');
+const autoTotem = require('mineflayer-auto-armor');
 
 const bot = mineflayer.createBot({...}); // Create your bot here
 
-bot.loadPlugin(autoArmor); // Load the plugin
+bot.loadPlugin(autoTotem); // Load the plugin
 
 bot.on('login', () => {
   bot.enableAutoTotem(); // Enable auto totem
