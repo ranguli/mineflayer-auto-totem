@@ -9,7 +9,7 @@ minecraft clients, but now for your mineflayer bot!
 ```javascript
 
 const mineflayer = require('mineflayer');
-const autoArmor = require('..')(mineflayer);
+const autoArmor = require('mineflayer-auto-armor')(mineflayer);
 
 const bot = mineflayer.createBot({...}); // Create your bot here
 
